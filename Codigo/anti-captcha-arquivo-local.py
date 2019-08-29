@@ -4,11 +4,9 @@
 # https://anti-captcha.com/mainpage
 
 from python3_anticaptcha import ImageToTextTask
-# Введите ключ от сервиса AntiCaptcha, из своего аккаунта. Anticaptcha service key.
+
 ANTICAPTCHA_KEY = ""
-# Ссылка на изображения для расшифровки. Link to captcha image.
 image_link = "gerarCaptcha.png"
-# Возвращается строка-расшифровка капчи. Get string for solve captcha, and some other info.
 user_answer = ImageToTextTask.ImageToTextTask(anticaptcha_key = ANTICAPTCHA_KEY).\
                 captcha_handler(captcha_file=image_link)
 

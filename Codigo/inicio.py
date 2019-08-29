@@ -7,7 +7,7 @@ from imagetyperzapi3.imagetyperzapi import ImageTyperzAPI
 
 
 def resolveCaptcha(img):
-    access_token = '9057BFA6CAAB4EACB6540F53C5948CE1'
+    access_token = ''
     ita = ImageTyperzAPI(access_token)
     balance = ita.account_balance()
     print('Balance: {}'.format(balance))
